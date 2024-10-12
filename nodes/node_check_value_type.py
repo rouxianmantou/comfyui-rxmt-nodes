@@ -28,14 +28,14 @@ class CheckValueTypeNode:
     @classmethod
     def INPUT_TYPES(cls):
         return {
-            "required": {
-                "input_data": ("*",),
-            },
+            "required": {},
+            "optional": {"input_data": ("*", {}), }
         }
 
     RETURN_TYPES = ("STRING",)
     FUNCTION = "execute"
     CATEGORY = "Utility"
+    OUTPUT_NODE = True
 
     def execute(self, input_data):
         """
@@ -47,6 +47,8 @@ class CheckValueTypeNode:
         Returns:
             output_type (str): A string representing the type of the input data.
         """
+        if input_data is None:
+            return ("No Input",)
         output_type = str(type(input_data).__name__)
         return (output_type,)
 

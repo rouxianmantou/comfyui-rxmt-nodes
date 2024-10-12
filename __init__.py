@@ -1,4 +1,4 @@
-from nodes.node_check_value_type import CheckValueTypeNode
+from .nodes.node_check_value_type import CheckValueTypeNode
 
 NODE_CLASS_MAPPINGS = {
     "CheckValueTypeNode": CheckValueTypeNode
