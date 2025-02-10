@@ -34,7 +34,7 @@ class CheckValueTypeNode:
 
     RETURN_TYPES = ("STRING",)
     FUNCTION = "execute"
-    CATEGORY = "Utility"
+    CATEGORY = "RXMT_Utility"
     OUTPUT_NODE = True
 
     def execute(self, input_data):
