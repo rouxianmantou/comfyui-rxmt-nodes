@@ -1,6 +1,3 @@
-# Example Custom Node for ComfyUI
-# You would typically put this code in a Python file within the custom nodes directory of ComfyUI
-
 class CheckValueTypeNode:
     """
     A custom node for ComfyUI to check the type of the input value.
